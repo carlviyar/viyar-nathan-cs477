@@ -6,13 +6,19 @@ We ran our Jupyter notebook on the Grace Computer Cluster maintained by the Yale
 The HPC allows for job submission, so we used `papermill` to run the jupyter notebook asynchronously within a `conda` environment containing our necessary libraries.
 
 Set up the environment using:
+
 `module load miniconda`
+
 `conda create -n [env_name] [packages separated by spaces]`
 
 Run the job using:
+
 `module load miniconda`
+
 `conda activate [env_name]`
+
 `conda install papermill`
+
 `papermill path/to/notebook/final_project.ipynb path/to/output/output.ipynb`
 
 The following libraries were used and installed (see the first cell the notebook):
